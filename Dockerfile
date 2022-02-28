@@ -1,3 +1,4 @@
-FROM nginx: 1-19-alpine
+FROM ubuntu:14.04 
+MAINTAINER Luis Lobos
 
-ADD index.html /usr/share/nginx/html 
+RUN apt-get update && apt-get -y upgrade
