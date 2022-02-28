@@ -7,10 +7,11 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import java.io.Serializable;
 
 @Entity
 @Table (name = "estado")
-public class Estado {
+public class Estado implements Serializable {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
