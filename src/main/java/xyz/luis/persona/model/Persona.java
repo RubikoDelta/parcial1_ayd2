@@ -37,6 +37,7 @@ public class Persona {
 		this.estado = estado;
 	}
 	public Persona() {
+		System.out.println("HOLA");
 	}
 	
 	public Long getId() {
